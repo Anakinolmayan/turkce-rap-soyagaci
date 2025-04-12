@@ -1,3 +1,34 @@
+// 📁 Proje Yapısı (turkce-rap-soyagaci)
+// ├── public/
+// │   └── index.html
+// ├── src/
+// │   ├── App.jsx         ← Ana React bileşeni (bu dosya)
+// │   ├── index.css       ← TailwindCSS için stiller
+// │   └── main.jsx        ← Uygulama giriş noktası
+// ├── tailwind.config.js  ← Tailwind yapılandırması
+// ├── postcss.config.js   ← Tailwind için PostCSS ayarı
+// ├── package.json        ← Bağımlılıklar ve scriptler
+// └── README.md           ← Proje açıklaması ve kurulum bilgisi
+
+// main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import TurkceRapTree from './App';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <TurkceRapTree />
+  </React.StrictMode>
+);
+
+// index.css
+// Bu dosyayı src/index.css olarak kaydetmelisin:
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// App.jsx aşağıda devam ediyor...
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
