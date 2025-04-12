@@ -19,6 +19,3 @@
     "autoprefixer": "^10.4.0"
   }
 }
-git add .
-git commit -m "proje dosyaları eklendi"
-git push origin main
